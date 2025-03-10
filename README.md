@@ -68,7 +68,12 @@ npm run dev
 ```
 
 ## 📸 Screenshots
-🚀 *Add images of your app UI here!*
+![Home Page](assets/3.png)
+![Stats Page](assets/1.png)
+![Doctors Recommendation Page](assets/2.png)
+![Ultrasound Upload Page](assets/4.png)
+![Symptoms Quick Test Page](assets/5.png)
+
 
 ## 🤖 AI Models Used
 - **LLaMA 3 (Groq API):** For chatbot-based assistance.
