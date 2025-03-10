@@ -7,7 +7,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";  
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDxy2myBgc8MAISKEzTPawWiFKBpfcPcek",
+  apiKey: "YOUR_API_KEY",
   authDomain: "appendicitis-73db1.firebaseapp.com",
   projectId: "appendicitis-73db1",
   storageBucket: "appendicitis-73db1.firebasestorage.app",
