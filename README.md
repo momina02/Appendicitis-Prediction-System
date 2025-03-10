@@ -6,6 +6,8 @@
 ![Firebase](https://img.shields.io/badge/Firebase-Authentication-yellow)
 ![Firestore](https://img.shields.io/badge/Firestore-Database-red)
 ![LLaMA 3](https://img.shields.io/badge/AI-Chatbot-blueviolet)
+![React](https://img.shields.io/badge/Frontend-React-blue)
+![FastAPI](https://img.shields.io/badge/Backend-FastAPI-teal)
 
 ## 📌 Project Overview
 **Appendicitis Prediction App** is an AI-powered medical assistant that helps users diagnose appendicitis using chat-based guidance, symptom-based tests, and ultrasound image analysis.
@@ -24,9 +26,9 @@
   - Users can **download reports as PDFs** or **share via Outlook**.
 
 ## 🏗️ Tech Stack
-- **Backend:** Python, Firebase (Auth & Firestore), Groq API (LLaMA 3)
+- **Frontend:** React
+- **Backend:** FastAPI, Firebase (Auth & Firestore), Groq API (LLaMA 3)
 - **Machine Learning:** Decision Tree, YOLOv8
-- **Frontend:** Streamlit / Flask (or specify your frontend framework)
 
 ## 🚀 Installation & Setup
 
@@ -36,19 +38,33 @@ git clone https://github.com/momina02/Appendicitis-Prediction-System.git
 cd Appendicitis-Prediction-System
 ```
 
-### 2️⃣ Install Dependencies
+### 2️⃣ Install Backend Dependencies
 ```sh
+cd backend
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Set Up Firebase
+### 3️⃣ Install Frontend Dependencies
+```sh
+cd frontend
+npm install
+```
+
+### 4️⃣ Set Up Firebase
 - Create a Firebase project.
 - Enable **Authentication** and **Firestore**.
-- Download your `serviceAccountKey.json` and place it in the project root.
+- Download your `serviceAccountKey.json` and place it in the `backend` folder.
 
-### 4️⃣ Run the Application
+### 5️⃣ Run the Backend (FastAPI)
 ```sh
-python app.py
+cd backend
+uvicorn main:app --reload
+```
+
+### 6️⃣ Run the Frontend (React)
+```sh
+cd frontend
+npm run dev
 ```
 
 ## 📸 Screenshots
