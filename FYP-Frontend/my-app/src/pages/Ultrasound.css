@@ -1,0 +1,190 @@
+/* Container for the entire page */
+.ultrasound-container {
+    max-width: 80%;
+    margin: 0 auto;
+    /* padding: 16px; */
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Page heading */
+  .ultrasound-heading {
+    color: #007bb5;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    /* margin: 50px; */
+    margin-bottom: 2rem;
+  }
+  
+  /* Upload box */
+  .upload-box {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 40px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 50px;
+  }
+  
+  .upload-box:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Content for the upload box when no image is selected */
+  .upload-box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .upload-box-plus-sign {
+    font-size: 3rem;
+    color: #999;
+  }
+  
+  .upload-box-text {
+    margin-top: 8px;
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  /* Image preview styling */
+  .upload-preview {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  
+  /* Hide default file input */
+  .hidden-input {
+    display: none;
+  }
+  
+  /* Button container */
+  .button-container {
+    text-align: center;
+    margin: 50px;
+  }
+  
+  /* Analyze button styling */
+  .analyze-button {
+    background-color: #0275d8;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .analyze-button:hover {
+    background-color: #025aa5;
+  }
+
+
+  /* Prediction result container */
+  .prediction-result {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 16px;
+    margin-top: 20px;
+  }
+  
+  .prediction-heading {
+    color: #007bff;
+    font-size: 3rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+  }
+  
+  .prediction-description {
+    color: #333;
+    line-height: 1.4;
+  }
+  
+  /* Modal overlay */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Modal content box */
+  .modal-content {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 24px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Modal heading */
+  .modal-heading {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+  
+  /* Modal text */
+  .modal-text {
+    color: #444;
+    margin-bottom: 24px;
+  }
+  
+  /* Modal buttons container */
+  .modal-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* Modal buttons */
+  .modal-button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .modal-button-no {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  .modal-button-yes {
+    background-color: #0275d8;
+    color: #fff;
+  }
+  
+  .modal-button-no:hover {
+    background-color: #c8c8c8;
+  }
+  
+  .modal-button-yes:hover {
+    background-color: #025aa5;
+  }
+  
+
+  
+  /* Footer Section */
+  .home-footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    font-size: 0.9em;
+    color: #777;
+  }
+  

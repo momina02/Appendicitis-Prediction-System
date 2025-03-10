@@ -1,0 +1,83 @@
+
+
+/* Override any page-content styles */
+.page-content {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-content: center !important;
+    align-items: center !important;
+}
+
+.stats-container {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    margin: 0 auto; /* Added to ensure centering regardless of parent */
+}
+  
+  /* Dashboard title style */
+  .stats-title {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: #007bff;
+    font-size: 3rem;
+    font-weight: bold;
+    /* margin: 3rem; */
+    margin-bottom: 2rem;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .graph-title {
+    color: #007bb5;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin: 1rem;
+  }
+  /* Grid container for charts */
+  .chart-grid {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 1rem;
+    /* margin-left: 7%; */
+  }
+  
+  /* For very small screens, fallback to one column */
+  @media (max-width: 600px) {
+    .chart-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .chart-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Evenly spread shadow */
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .chart-card:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* More prominent on hover */
+  }
+  
+  
+  /* Loader spinner animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .home-footer{
+    margin-top: 5%;
+  }

@@ -1,0 +1,78 @@
+.auth-wrapper {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    position: fixed;  
+    top: 0;
+    left: 0;
+    width: 100vw;  
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff; 
+  } */
+
+
+  
+  
+  
+  /* Form */
+  .login-form, .register-form {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    gap: 15px;
+  }
+  
+  /* Input Fields */
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #3498db; /* Light blue */
+  }
+  
+  /* Button */
+  button {
+    background: #3498db;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #2980b9;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    background: #ffebeb;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  /* Authentication Links */
+  .auth-links {
+    font-size: 14px;
+  }
+  
+  .auth-links a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .auth-links a:hover {
+    text-decoration: underline;
+  }
+  

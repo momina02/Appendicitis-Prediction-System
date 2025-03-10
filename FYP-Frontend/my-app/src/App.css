@@ -1,0 +1,392 @@
+
+/* ############################################################################################### */
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* Container for the dark mode toggle */
+.dark-mode-toggle-container {
+  margin: 10px 0 0 20px; /* Adjust as needed */
+  display: flex;
+  justify-content: flex-start;
+  background: transparent;
+}
+
+/* Style the toggle button as needed */
+.dark-mode-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.dark-mode-toggle {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none; /* Remove default focus outline */
+}
+
+.dark-mode-toggle:hover,
+.dark-mode-toggle:focus {
+  background: transparent; /* Ensure no background changes */
+  outline: none;
+}
+
+
+
+/* ################################################################################### */
+
+
+
+
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* App container */
+.app-container {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Navbar styles - keep your existing navbar styles */
+.navbar {
+  background-color: #333;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Your existing navbar styles */
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+
+/* Main content area */
+.main-content {
+  padding-top: 50px; /* Height of navbar */
+  min-height: calc(100vh - 50px);
+}
+
+/* Login/Register form styles */
+.login-container,
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 50px);
+  padding: 20px;
+}
+
+.login-form,
+.register-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form input,
+.register-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.login-form button,
+.register-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-links {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.auth-links a {
+  color: #333;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Logout button styles */
+.logout-button {
+  position: fixed;
+  top: 60px; /* Below navbar */
+  right: 20px;
+  padding: 8px 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.logout-button:hover {
+  background-color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+/* Login styles */
+.login-container,
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 50px);
+  padding: 20px;
+  margin-top: 50px; /* Add this to account for navbar height */
+}
+
+.login-form,
+.register-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-form h2,
+.register-form h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.login-form input,
+.register-form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.login-form button,
+.register-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.login-form button:hover,
+.register-form button:hover {
+  background-color: #444;
+}
+
+.auth-links {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.auth-links a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #ff0000;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add these at the very top of your App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+/* #root {
+  width: auto;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+
+.logo {
+  height: 50px;
+  padding: 1em;
+  margin-bottom: 10px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* App container */
+.app-container {
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 50px;
+  position: relative;
+  margin: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #ddd;
+}
+
+/* Main content styles */
+.main-content {
+  padding: 1rem;
+  width: 100%;
+  position: relative;
+  margin: 0;
+}
+
+/* Remove any max-width constraints */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
